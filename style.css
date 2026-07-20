@@ -39,11 +39,44 @@ nav {
 }
 
 
+/* Page headings */
 h1 {
     margin-top: 30px;
 }
 
 
+/* Paragraphs */
 p {
     line-height: 1.6;
+}
+
+
+/* Publications */
+.publication {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+
+/* Publication links */
+.publication a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+
+/* Publication link hover effect */
+.publication a:hover {
+    text-decoration: underline;
+}
+
+
+/* Lists */
+ul {
+    padding-left: 25px;
+}
+
+
+li {
+    margin-bottom: 10px;
 }
