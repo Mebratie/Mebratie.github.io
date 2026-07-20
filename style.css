@@ -3,8 +3,11 @@ body {
     max-width: 900px;
     margin: auto;
     padding: 40px;
+    position: relative;
 }
 
+
+/* Navigation bar */
 nav {
     margin-bottom: 30px;
 }
@@ -12,4 +15,46 @@ nav {
 nav a {
     margin-right: 20px;
     text-decoration: none;
+    color: #333;
+}
+
+nav a:hover {
+    color: #0077b5;
+}
+
+
+/* Social icons - top right corner */
+.social-icons {
+    position: absolute;
+    top: 25px;
+    right: 40px;
+}
+
+
+.social-icons a {
+    margin-left: 15px;
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+}
+
+
+.social-icons a:hover {
+    color: #0077b5;
+}
+
+
+/* Headings */
+h1 {
+    margin-top: 40px;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+
+/* Paragraphs */
+p {
+    line-height: 1.6;
 }
