@@ -117,11 +117,20 @@ li {
 /* Profile header */
 .profile-header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     gap: 30px;
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
+
+/* Text area containing name and subtitle */
+.profile-text {
+    display: flex;
+    flex-direction: column;
+}
+
 
 /* Profile photo */
 .profile-photo {
@@ -131,12 +140,33 @@ li {
     border-radius: 50%;
 }
 
-/* Remove extra spacing */
+
+/* Name */
 .profile-header h1 {
     margin: 0;
+    font-size: 36px;
+    color: #222;
 }
 
+
+/* Subtitle */
 .profile-header .subtitle {
+    font-size: 20px;
+    color: #555;
     margin-top: 8px;
     margin-bottom: 0;
+}
+
+
+/* Mobile view */
+@media (max-width: 700px) {
+    .profile-header {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+    }
 }
